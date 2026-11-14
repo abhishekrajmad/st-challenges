@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import "./App.css";
 import ProductFilterSort from "./challenges/01-product-filter-sort/ProductFilterSort";
+import DebouncedUserSearch from "./challenges/02-debounced-user-search/DebouncedUserSearch";
 
 function App() {
   return (
@@ -13,6 +14,11 @@ function App() {
       <Route
         path="/challenges/product-filter-sort"
         element={<ProductFilterSort />}
+      />
+
+      <Route
+        path="/challenges/debounced-user-search"
+        element={<DebouncedUserSearch />}
       />
 
       <Route path="*" element={<NotFound />} />

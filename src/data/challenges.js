@@ -8,6 +8,15 @@ export const challenges = [
     // level: "Beginner",
     // duration: "30 minutes",
     path: "/challenges/product-filter-sort",
-    // status: "In Progress",
+  },
+  {
+    id: 2,
+    title: "Debounced User Search",
+    description:
+      "Search users using a debounced API request with loading and error handling.",
+    // category: "React",
+    // level: "Intermediate",
+    // duration: "30 min",
+    path: "/challenges/debounced-user-search",
   },
 ];
