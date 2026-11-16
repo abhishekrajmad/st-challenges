@@ -15,10 +15,10 @@ function ChallengeCard({ challenge }) {
 
         <p>{challenge.description}</p>
 
-        <div className="challenge-card-footer">
+        {/* <div className="challenge-card-footer">
           <span>{challenge.duration}</span>
           <span>{challenge.status}</span>
-        </div>
+        </div> */}
       </div>
     </Link>
   );

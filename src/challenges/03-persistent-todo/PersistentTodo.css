@@ -1,0 +1,280 @@
+.todo-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 20px;
+  color: #f5f5f5;
+}
+
+.todo-title {
+  margin: 0 0 24px;
+  font-size: 32px;
+  text-align: center;
+}
+
+.todo-form {
+  display: flex;
+  max-width: 500px;
+  gap: 12px;
+  margin: 0 auto 24px;
+}
+
+.todo-input,
+.todo-edit-input {
+  min-width: 0;
+  padding: 14px 16px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  outline: none;
+  background: #18181b;
+  color: #f5f5f5;
+  font-size: 16px;
+}
+
+.todo-input {
+  flex: 1;
+}
+
+.todo-input:focus,
+.todo-edit-input:focus {
+  border-color: #71717a;
+}
+
+.todo-input::placeholder,
+.todo-edit-input::placeholder {
+  color: #a1a1aa;
+}
+
+.todo-add-btn {
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 8px;
+  background: #f5f5f5;
+  color: #111;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.todo-add-btn:hover:not(:disabled) {
+  background: #d4d4d8;
+}
+
+.todo-add-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.todo-controls {
+  display: flex;
+  max-width: 500px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 0 auto 20px;
+}
+
+.todo-count {
+  color: #a1a1aa;
+  font-size: 14px;
+}
+
+.todo-filters {
+  display: flex;
+  gap: 8px;
+}
+
+.filter-btn,
+.clear-done-btn,
+.edit-btn,
+.delete-btn,
+.save-btn,
+.cancel-btn {
+  padding: 8px 12px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background: #18181b;
+  font-size: 13px;
+  cursor: pointer;
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.filter-btn {
+  color: #a1a1aa;
+}
+
+.filter-btn:hover {
+  color: #f5f5f5;
+  border-color: #71717a;
+}
+
+.filter-btn.active {
+  color: #f5f5f5;
+  border-color: #a1a1aa;
+}
+
+.clear-done-btn,
+.delete-btn {
+  color: #f87171;
+  border-color: #7f1d1d;
+}
+
+.clear-done-btn:hover,
+.delete-btn:hover {
+  background: #7f1d1d;
+  color: #fff;
+}
+
+.todo-list {
+  display: flex;
+  max-width: 500px;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  background: #18181b;
+  transition: border-color 0.2s ease;
+}
+
+.todo-item:hover {
+  border-color: #71717a;
+}
+
+.todo-label {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-width: 0;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.todo-checkbox {
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+  accent-color: #a78bfa;
+  cursor: pointer;
+}
+
+.todo-text {
+  color: #f5f5f5;
+  font-size: 15px;
+  overflow-wrap: anywhere;
+  cursor: pointer;
+}
+
+.todo-item.completed .todo-text {
+  color: #a1a1aa;
+  text-decoration: line-through;
+}
+
+.todo-actions {
+  display: flex;
+  flex-shrink: 0;
+  gap: 8px;
+}
+
+.edit-btn,
+.save-btn,
+.cancel-btn {
+  color: #d4d4d8;
+}
+
+.edit-btn:hover,
+.cancel-btn:hover {
+  border-color: #71717a;
+  color: #fff;
+}
+
+.save-btn {
+  color: #86efac;
+  border-color: #166534;
+}
+
+.save-btn:hover {
+  background: #166534;
+  color: #fff;
+}
+
+.todo-edit-group {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 8px;
+}
+
+.todo-edit-input {
+  flex: 1;
+}
+
+.empty-state {
+  margin: 0;
+  padding: 24px 16px;
+  border: 1px dashed #333;
+  border-radius: 10px;
+  color: #a1a1aa;
+  text-align: center;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .todo-container {
+    padding: 32px 20px;
+  }
+
+  .todo-title {
+    font-size: 28px;
+  }
+
+  .todo-controls {
+    align-items: flex-start;
+  }
+
+  .todo-filters {
+    order: 3;
+    width: 100%;
+  }
+
+  .filter-btn {
+    flex: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .todo-item {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .todo-actions {
+    margin-left: 29px;
+  }
+
+  .todo-edit-group {
+    flex-wrap: wrap;
+  }
+
+  .todo-edit-input {
+    flex-basis: 100%;
+  }
+
+  .todo-add-btn {
+    padding: 12px 16px;
+  }
+}
