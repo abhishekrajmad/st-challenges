@@ -11,6 +11,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/challenges" element={<Home />} />
 
       <Route
         path="/challenges/product-filter-sort"
