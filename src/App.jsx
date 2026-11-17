@@ -6,6 +6,7 @@ import "./App.css";
 import ProductFilterSort from "./challenges/01-product-filter-sort/ProductFilterSort";
 import DebouncedUserSearch from "./challenges/02-debounced-user-search/DebouncedUserSearch";
 import PersistentTodo from "./challenges/03-persistent-todo/PersistentTodo";
+import PomodoroTimer from "./challenges/04-pomodoro-timer/PomodoroTimer";
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
       />
 
       <Route path="/challenges/persistent-todo" element={<PersistentTodo />} />
+
+      <Route path="/challenges/pomodoro-timer" element={<PomodoroTimer />} />
 
       <Route path="*" element={<NotFound />} />
     </Routes>

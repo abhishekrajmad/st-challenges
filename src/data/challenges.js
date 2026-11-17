@@ -20,4 +20,11 @@ export const challenges = [
       "Build a persistent todo app using useReducer, with task management, filtering, inline editing, and localStorage.",
     path: "/challenges/persistent-todo",
   },
+  {
+    id: 4,
+    title: "Pomodoro Timer",
+    description:
+      "Build a customizable Pomodoro timer with focus and break sessions, start, pause, reset, automatic session switching, and completed session tracking.",
+    path: "/challenges/pomodoro-timer",
+  },
 ];
