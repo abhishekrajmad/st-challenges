@@ -27,4 +27,18 @@ export const challenges = [
       "Build a customizable Pomodoro timer with focus and break sessions, start, pause, reset, automatic session switching, and completed session tracking.",
     path: "/challenges/pomodoro-timer",
   },
+  {
+    id: 5,
+    title: "Multi-Step Signup",
+    description:
+      "Build a 3-step signup wizard with validation, shared form state, step navigation, review, and successful submission.",
+    path: "/challenges/multi-step-signup",
+  },
+  {
+    id: 6,
+    title: "Shopping Cart with Context",
+    description:
+      "Build a shopping cart using React Context with shared state, quantity controls, totals, GST, and coupon support.",
+    path: "/challenges/shopping-cart",
+  },
 ];
